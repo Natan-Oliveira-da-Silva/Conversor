@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/botaoDeMudarTema.css">
+    <link rel="stylesheet" href="CSS/software.css">
+    <link rel="stylesheet" href="CSS/temaEscuro.css">
+    <title>Sobre o Software</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <a class="botaoDeVoltar" href="index.html">Voltar</a>
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    
+    <main class="conteudoPrincipal__section">
+        <h1 class="titulo">Sobre o software</h1>
+        <div class="caixaDeImagens">
+            <img class="linguagensImg" src="IMG/iconesColoridos/html-5.png">
+            <img class="linguagensImg" src="IMG/iconesColoridos/css-3.png">
+            <img id="javaScript" class="linguagensImg" src="IMG/iconesColoridos/js.png">
+        </div>
+        
+        <p class="conteudoPrincipal__section__texto">O Conversor de Moedas é um software que proporciona ao usuário uma facilidade na conversão de moedas. Ele foi construído com as linguagens HTML, CSS e JavaScript. A fonte das informações usadas nas conversões do Conversor é a API pública <a class="linkDeSite" target="_blank" href="https://docs.awesomeapi.com.br/api-de-moedas">AwesomeAPI</a>. O conversor obtém as taxas de conversão fornecidas pela API e as exibe de forma amigável e dinâmica. A inspiração do Conversor de Moedas foi o site <a class="linkDeSite" target="_blank" href="https://dolarhoje.com/">dolarhoje.com</a>, que também executa conversões de moedas. O botão abaixo encaminha para o repositório do GitHub em que se encontram os arquivos deste projeto.</p>
+        <a class="botoesLink"  target="_blank" href="https://github.com/Natan-Oliveira-da-Silva/Conversor-de-Moedas">Repositório do GitHub</a>
+    </main>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="JS/mudancaDeTema.js"></script>
+</body>
+</html>

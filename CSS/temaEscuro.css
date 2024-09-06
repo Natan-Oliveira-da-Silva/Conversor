@@ -1,0 +1,9 @@
+.bodyEscuro{
+    background: #232c23;
+}
+.botaoEscuro{
+    background: var(--cor8);
+}
+.campoEscuro{
+    background: grey;
+}

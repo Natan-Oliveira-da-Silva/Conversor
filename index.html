@@ -1,0 +1,119 @@
+<!--
+Paleta de cores:
+#A4BC92
+#B3C99C
+#C7E9B0
+#DDFFBB
+
+Site de referência: https://dolarhoje.com/
+
+PRÓXIMAS PREOCUPAÇÕES:
+-Tirar comentários desnecessários e colocar comentários úteis
+-Quando mudar o tema em uma página, tem que mudar em todas
+
+
+#entradas:
+
+#erros:
+
+#funcionalidades:
+
+#estética:
+-Fazer o CSS
+-Colocar barra de rolagem nas opções de um select
+-Colocar nome da moeda, campo input e select um embaixo do outro
+
+
+FEITO:
+-Zerar os campos input ao iniciar o programa e ao mudar de moeda: o certo é que fique 1euro = 6,13reais
+-Colocar um evento mais específico do que um click. uma alteração de valor
+-Impedir a inserção de letras e não-números nos campos
+-Impedir conversão entre moedas iguais
+-(DESISTI)Colocar vírgula ao invés de ponto
+-Deixar duas casas decimais sempre
+-Impedir mais de uma vírgula nos inputs
+-(DESISTI)Permitir a inserção de vírgulas nos campos input
+-(DESISTI)Permitir a entrada de vírgulas
+-O programa não converte real, euro e dólar para bitcoin.
+-Colocar outras moedas(oito moedas)
+-Ir adicionando uma moeda por vez e só adicioná-la depois de ter checado se é compatível com todas as outras
+-Colocar try-catch
+-Incluir uma seção Mais Sobre o Desenvolvedor para colocar o meu Linkedin
+-Colocar uma aba de "mais sobre o software"
+-Colocar o botão de alternar modo luminoso
+-Talvez seja necessário fazer um dicionário para colocar o nome string da moeda ("BRL", por exemplo) e o nome "por extenso" da moeda (real brasileiro).Não sei se um array seria a melhor opção.
+-(DESISTI)Atualizar data no rodapé
+-forçar a conversao de tipo apos o campo sair do foco
+
+-->
+<!-- Este software foi feito em 01/09/2024 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/botaoDeMudarTema.css">
+    <link rel="stylesheet" href="CSS/paginaInicial.css">
+    <link rel="stylesheet" href="CSS/temaEscuro.css">
+</head>
+<body>
+    <header>
+        <div>
+            <input type="checkbox" class="checkbox" id="chk">
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="conteudoPrincipal"> 
+            <section class="conteudoPrincipal__section">
+                    <h1 class="titulo">Conversor<br class="espacoDeArrumacao"> de Moedas</h1>
+                    <div class="caixaMaior">
+                        <div id="campoDoNomeEsq"class="campoDoNome">
+                            <div class="caixinhaDoInput">
+                                <input type="text" class="valores" id="inputEsquerdo">
+                            </div>
+                                <select class="opcoesDeMoeda" name="select" id="selectEsquerdo">
+                                    <option class="opcaoDeMoeda" value="USD" selected>Dólar Americano</option>
+                                    <option class="opcaoDeMoeda" value="BRL">Real Brasileiro</option>
+                                    <option class="opcaoDeMoeda" value="EUR">Euro</option>
+                                    <option class="opcaoDeMoeda" value="GBP">Libra Esterlina</option>
+                                </select>
+                        </div>
+                        <div  class="campoDoNome">
+                            <div class="caixinhaDoInput">
+                                <input type="text" class="valores" id="inputDireito">
+                            </div>
+                            <select class="opcoesDeMoeda" id="selectDireito">
+                                <option class="opcaoDeMoeda" value="USD">Dólar Americano</option>
+                                <option class="opcaoDeMoeda" value="BRL" selected>Real Brasileiro</option>
+                                <option class="opcaoDeMoeda" value="EUR">Euro</option>
+                                <option class="opcaoDeMoeda" value="GBP">Libra Esterlina</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                <p class="conteudoPrincipal__section__texto">Para fazer uma conversão, basta selecionar duas das opções de moeda e digitar um valor.</p>
+                
+            </section>
+            <section class="conteudoPrincipal__section">
+                <div class="caixaDeBotoes">
+                    <a class="botoesLink" href="desenvolvedor.html">Sobre o desenvolvedor</a><br>
+                    <a class="botoesLink" href="software.html">Sobre o software</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="JS/index.js"></script>
+    <script src="JS/segundoPasso.js"></script>
+    <script src="JS/controleDosInputs.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="JS/mudancaDeTema.js"></script>
+</body>
+</html>

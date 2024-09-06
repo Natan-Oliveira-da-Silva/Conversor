@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+:root {
+    --fonte1:font-family: "Lato", sans-serif;
+
+    --cor1:#caf0f8;
+    --cor2:#ade8f4;
+    --cor3:#90e0ef;
+    --cor4:#48cae4;
+    --cor5:#00b4d8;
+    --cor6:#0096c7;
+    --cor7:#0077b6;
+    --cor8:#023e8a;
+    --cor9:#03045e;
+}
+
+body{
+    flex-direction: column;
+    align-items: end;
+    margin:5vw;
+    background-color: var(--cor1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.conteudoPrincipal__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.5rem;
+}
+.titulo{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.campoDoNome{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: white;
+    border-radius:10px;
+    height: 9vw;
+    display:flex;
+    display: flex;
+    justify-content: center;
+}
+.campoDoNome input,select{
+    text-align: center;
+    width:35vw;
+    background-color: transparent;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.campoDoNome select{
+    padding-right:0.8rem;
+}
+input,select{
+    font-size: 1.5rem;
+    background-color:transparent;
+}
+.campoDoNome input:focus{
+    border-radius: 8px;
+    border-color: transparent; /* Cor da borda */
+    outline: none; /* Remove o contorno padrão */
+}
+.caixinhaDoInput{
+    width:70%;
+    display:flex;
+    justify-content: center;
+    padding-top:0.5rem;
+    padding-right:0rem;
+    padding-bottom:0.5rem;
+    padding-left:0rem;
+}
+.campoDoNome select{
+    appearance: none;
+}
+.caixaDeBotoes{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.botoesLink{
+    background-color: var(--cor5);
+    text-decoration: none;
+    padding: 3vw 6vw;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color:black;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoesLink:hover{
+    background-color: var(--cor7);
+}
+.botoesLink.botoesLink:active{
+    background-color: var(--cor8);
+    color:white;
+}
+.conteudoPrincipal__section__texto{
+    margin-top: 1.5rem;
+}
+.espacoDeArrumacao{
+    display: none;
+}
+@media (max-width: 279px) {
+    .espacoDeArrumacao{
+        display: block;
+    }
+    .botoesLink{
+        padding: 3vw 6vw;
+        font-size: 1.0rem;
+        margin-top: 1.0rem;
+        margin-bottom: 0rem;
+        border-radius: 12px;
+    }
+    .conteudoPrincipal__section__texto{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        text-align: center;
+        font-size: 1.0rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .conteudoPrincipal__section{
+        font-size: 1.0rem;
+    }
+    .campoDoNome input:focus{
+        background-color:transparent;
+        border-radius: 0px;        
+    }
+    .campoDoNome input,select{
+        background-color:transparent;
+        border-radius: 0px;
+        font-size: 1.0rem;        
+    }
+    .campoDoNome{
+        height:2em;
+        width:90vw;
+    }
+}
+@media (min-width: 280px) {
+    .espacoDeArrumacao{
+        display: none;
+    }
+    .botoesLink{
+        padding: 3vw 6vw;
+        font-size: 1.0rem;
+        margin-top: 1.0rem;
+        margin-bottom: 0rem;
+        border-radius: 12px;
+    }
+    .conteudoPrincipal__section__texto{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        text-align: center;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    
+    .conteudoPrincipal__section{
+        font-size: 1.0rem;
+    }
+    .conteudoPrincipal__section__texto{
+        font-size: 1.0rem;
+    }
+        
+    .campoDoNome input:focus{
+        background-color:transparent;
+        border-radius: 0px;        
+    }
+    
+    .campoDoNome input,select{
+        background-color:transparent;
+        border-radius: 0px;
+        font-size: 1.0rem;        
+    }
+    .campoDoNome{
+        height:2em;
+        width:90vw;
+    }
+        
+}
+@media (min-width: 320px) {
+    .titulo{
+        font-size: 1.8rem;
+    }
+    .conteudoPrincipal__section{
+        font-size: 1.2rem;
+    }
+    .conteudoPrincipal__section__texto{
+        font-size: 1.2rem;
+    }
+    .campoDoNome input,select{
+        font-size: 1.2rem;        
+    }
+}
+@media (min-width: 656px) {
+    .titulo{
+        font-size: 2.2rem;
+    }
+    .conteudoPrincipal__section__texto{
+        margin-bottom:1rem;
+    }
+    
+    .campoDoNome{
+        height:3em;
+    }
+}
+@media (min-width: 770px) {
+    
+    .caixaDeBotoes{
+        display: flex;
+        flex-direction: row;
+    }
+    .botoesLink{
+        width:40vw;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
+}
+@media (min-width: 900px) {
+    .campoDoNome{
+        height:4em;
+        width:40vw;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
+    .caixaMaior{
+        display: flex;
+        flex-direction: row;
+    }
+    .valores{
+        max-width: 15vw;
+    }
+}
+@media (min-width: 1024px) {
+    .titulo{
+        font-size:3rem;
+    }
+    .conteudoPrincipal__section__texto{
+        font-size:1.4rem;
+    }
+    .campoDoNome input,select{
+        font-size: 1.4rem;        
+    }
+    .botoesLink{
+        font-size: 1.4rem;
+        height:4em
+    }
+    
+}
